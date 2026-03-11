@@ -1,11 +1,11 @@
+@import "tailwindcss";
+
+
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@tailwind base;
 
-@custom-variant dark (&:is(.dark *));
-@tailwind components;
-@tailwind utilities;
+@variant dark (&:where(.dark, .dark *));
 
 body{
   font-family: Arial, sans-serif;
@@ -42,13 +42,13 @@ body{
   outline: none;
 }
 
-.inputArea button{
+/* .inputArea button{
   background: #4CAF50;
   color: white;
   border: none;
   padding: 8px 15px;
   cursor: pointer;
-}
+} */
 
 .list{
   list-style: none;

@@ -61,8 +61,8 @@ export default function Todo({ dummy }: TodoProps){
               onChange={(e)=>setInput(e.target.value)}
             />
 
-            <Button variant="outline" onClick={addTodo}>
-              Add
+            <Button onClick={addTodo} className="ml-2" variant={"limeGradient"}>
+              Addasd
             </Button>
 
           </div>
