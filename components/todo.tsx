@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 type TodoProps = {
@@ -40,6 +40,12 @@ export default function Todo({ dummy }: TodoProps){
   const cancelDelete = () => {
     setDeleteIndex(null);
   };
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setError("");
+    },5000);
+  },[error]);
 
   return(
     <div className="container">
